@@ -80,9 +80,10 @@ gcc assembler.c -o assembler
 
 
 📁 檔案說明
+
 檔案名稱	            說明
-assembler.c	        主程式，實作 Pass 1 & Pass 2
+assembler.c	    主程式，實作 Pass 1 & Pass 2
 loader.c            載入器模組，模擬連結與重定位
-input.asm	          測試程式碼範例
-symbol_table.txt	  組譯後產生的符號表
+input.asm	    測試程式碼範例
+symbol_table.txt    組譯後產生的符號表
 object_code.txt	    輸出的機器碼與物件程式
