@@ -1,8 +1,11 @@
 # SIC-XE-Assembler-Loader-Simulator
-📌 專案簡介 本專案模擬簡化指令電腦（Simplified Instructional Computer, SIC/XE）的組譯器（Assembler）與載入器（Linker/Loader），使用 C 語言實作，模擬將 source code 組譯為機器碼，再載入記憶體並模擬執行流程。
+📌 專案簡介 
+
+本專案模擬簡化指令電腦（Simplified Instructional Computer, SIC/XE）的組譯器（Assembler）與載入器（Linker/Loader），使用 C 語言實作，模擬將 source code 組譯為機器碼，再載入記憶體並模擬執行流程。
 
 
 🛠 使用技術
+
 C 語言
 
 SIC/XE 指令集架構（指令格式、位址模式）
@@ -18,6 +21,7 @@ Linking 與 relocation
 
 🎯 專案特色
 
+
 ✅ 支援兩階段組譯（Pass1, Pass2）
 
 ✅ 可處理 Symbol Table 與程式 Counter 管理
@@ -32,6 +36,7 @@ Linking 與 relocation
 
 
 🔧 組譯流程簡述
+
 Pass 1：
 
 讀入原始程式碼
@@ -48,6 +53,7 @@ Pass 2：
 
 
 🖥️ 範例組譯輸入
+
 COPY    START   1000
 FIRST   STL     RETADR
 CLOOP   JSUB    RDREC
@@ -58,12 +64,14 @@ CLOOP   JSUB    RDREC
 
 
 📤 輸出物件程式範例
+
 H^COPY^001000^00107A
 T^001000^1E^141033^482039^001036^...
 E^001000
 
 
 🧪 執行與展示
+
 gcc assembler.c -o assembler
 ./assembler input.asm
 輸出：物件程式檔、Symbol Table、機器碼對照表
